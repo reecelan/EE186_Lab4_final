@@ -13,3 +13,9 @@ If we had no divider, the photo diode would simply pull the pin up to the supply
 Part 3.
 
 Vout = B/2^n (Vref) = 9/2^12 (Vref) = 0.0022Vref.
+
+The sampling rate determines how long a voltages is held before switching to a new value. Higher sampling rate makes the audio smoother and avoids aliasing.
+
+Sine: Pure tone with no harmonics. Smooth and consistant. Square: Adding odd harmonics, sounds buzzy and contains more total power than sine wave. Sawtooth: Adds all harmonics. Tends to sounds aggressive or harsh.
+
+The capacitor is meant to DC coupling the audio signal. There is no DC component of sound, so it would be a waste of power to drive the constant offset portion of the output into the actual load.
